@@ -15,7 +15,7 @@
  u8 input_arr[9];
  u8 ran_arr[9];
  
- u8 req_arr[5];
+ //u8 req_arr[5];
  u8 encryptMessage(u8 message)
  {
 	return message ^ message ;
@@ -75,7 +75,7 @@ void UDS(void){
 			UDS_Transmit("NRC7F3133");
 		}
 		//UDS_Receive(input_arr);
-		if(!strcmp(input_arr,"2701")){			
+		else if(!strcmp(input_arr,"2701")){			
 		LCD_Clear();
 		LCD_GoTo(1, 1);
 		LCD_SendString("67 01 ");
@@ -107,7 +107,7 @@ void UDS(void){
 		{
 			input_arr[i]=0;
 		}
-		UDS_Receive(req_arr);
+		//UDS_Receive(req_arr);
 		UDS_Receive(input_arr);
 		if(!strcmp(input_arr,"2702"))
 		{
@@ -150,13 +150,7 @@ void UDS(void){
 		_delay_ms(1500);
 	}
 		
-		else{
-			LCD_Clear();
-			LCD_GoTo(1,1);
-			LCD_SendString("7F 31 33");
-			UDS_Transmit("7F3133");
-			_delay_ms(1500);
-		}
+		
 		break;
 		
 		
@@ -168,7 +162,7 @@ void UDS(void){
 			LCD_Clear();
 			LCD_GoTo(1,1);
 			LCD_SendString("71 01 AA 00");
-			UDS_Receive("7101AA00");
+			UDS_Transmit("7101AA00");
 			setpinvalue(PINA5, HIGH);
 		}
 		else

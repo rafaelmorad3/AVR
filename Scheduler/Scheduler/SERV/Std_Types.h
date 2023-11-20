@@ -29,6 +29,10 @@ typedef enum{
 
 
 
+#define PASS                    1
+#define FAIL                    0
+
+
 
 
 #endif /* STD_TYPES_H_ */

@@ -1,0 +1,30 @@
+ genpkey -algorithm RSA -out private_key.pem
+ 
+ rsa -pubout -in private_key.pem -out public_key.pem
+ 
+ 
+ rsa -in private_key.pem -noout -modulus
+ 
+rsa -pubin -in public_key.pem -noout -modulus
+
+# Generate the Root Key (RSA)
+openssl genpkey -algorithm RSA -out root_key.pem
+
+# Generate the Root Certificate
+openssl req -new -key root_key.pem -x509 -days 3650 -out root_cert.pem
+# Generate the Intermediate 1 Key
+openssl genpkey -algorithm RSA -out intermediate1_key.pem
+
+# Generate the Intermediate 1 CSR (Certificate Signing Request)
+openssl req -new -key intermediate1_key.pem -out intermediate1_csr.pem
+
+# Sign Intermediate 1 CSR with the Root Certificate
+openssl x509 -req -in intermediate1_csr.pem -CA root_cert.pem -CAkey root_key.pem -CAcreateserial -out intermediate1_cert.pem -days 1825
+# Generate the Intermediate 2 Key
+openssl genpkey -algorithm RSA -out intermediate2_key.pem
+
+# Generate the Intermediate 2 CSR (Certificate Signing Request)
+openssl req -new -key intermediate2_key.pem -out intermediate2_csr.pem
+
+# Sign Intermediate 2 CSR with the Intermediate 1 Certificate
+openssl x509 -req -in intermediate2_csr.pem -CA intermediate1_cert.pem -CAkey intermediate1_key.pem -CAcreateserial -out intermediate2_cert.pem -days 365

@@ -4,15 +4,11 @@
 
 main.c
 
-MCAL\DIO.c
+MCAL\DIO\src\DIO_program.c
 
-MCAL\DIO_CFG.c
+MCAL\GI\src\GI_program.c
 
-MCAL\EX_Interrupt.c
-
-MCAL\GIE_Prog.c
-
-MCAL\Timer.c
+RTOS\src\RTOS_KERNEL_program.c
 
 RTOS\src\RTOS_Timer_program.c
 

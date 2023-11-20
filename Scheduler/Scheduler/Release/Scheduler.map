@@ -1,11 +1,11 @@
 Archive member included to satisfy reference by file (symbol)
 
+d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+                              RTOS/src/RTOS_KERNEL_program.o (__udivmodhi4)
 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
                               D:/programm/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o (exit)
-d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
-                              MCAL/DIO_CFG.o (__do_copy_data)
 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
-                              MCAL/EX_Interrupt.o (__do_clear_bss)
+                              RTOS/src/RTOS_KERNEL_program.o (__do_clear_bss)
 
 Discarded input sections
 
@@ -14,120 +14,54 @@ Discarded input sections
  .text          0x00000000        0x0 main.o
  .data          0x00000000        0x0 main.o
  .bss           0x00000000        0x0 main.o
- .text          0x00000000        0x0 MCAL/DIO.o
- .data          0x00000000        0x0 MCAL/DIO.o
- .bss           0x00000000        0x0 MCAL/DIO.o
- .text.DIO_INIT
-                0x00000000      0x1c6 MCAL/DIO.o
- .text.setpinvalue
-                0x00000000      0x11a MCAL/DIO.o
- .text.getpinvalue
-                0x00000000       0x46 MCAL/DIO.o
- .text.togglepinvalue
-                0x00000000       0x6a MCAL/DIO.o
- .text.ControlPortDIR
-                0x00000000        0xe MCAL/DIO.o
- .text.controlPortValue
-                0x00000000        0xe MCAL/DIO.o
- .comment       0x00000000       0x31 MCAL/DIO.o
- .text          0x00000000        0x0 MCAL/DIO_CFG.o
- .data          0x00000000        0x0 MCAL/DIO_CFG.o
- .bss           0x00000000        0x0 MCAL/DIO_CFG.o
- .rodata.Dio_PinsStatusArr
-                0x00000000       0x20 MCAL/DIO_CFG.o
- .comment       0x00000000       0x31 MCAL/DIO_CFG.o
- .text          0x00000000        0x0 MCAL/EX_Interrupt.o
- .data          0x00000000        0x0 MCAL/EX_Interrupt.o
- .bss           0x00000000        0x0 MCAL/EX_Interrupt.o
- .text.ExInterrupt_Enable
-                0x00000000       0x20 MCAL/EX_Interrupt.o
- .text.ExInterrupt_Disable
-                0x00000000       0x20 MCAL/EX_Interrupt.o
- .text.ExInterrupt_TriggerEdge
-                0x00000000       0x8c MCAL/EX_Interrupt.o
- .text.EX_Interrpt_Init
-                0x00000000       0x18 MCAL/EX_Interrupt.o
- .text.ExInterrupt_SetCallBack
-                0x00000000       0x2a MCAL/EX_Interrupt.o
- .text          0x00000000        0x0 MCAL/GIE_Prog.o
- .data          0x00000000        0x0 MCAL/GIE_Prog.o
- .bss           0x00000000        0x0 MCAL/GIE_Prog.o
- .text.GIE_voidEnable
-                0x00000000        0x8 MCAL/GIE_Prog.o
- .text.GIE_voidDisable
-                0x00000000        0x8 MCAL/GIE_Prog.o
- .comment       0x00000000       0x31 MCAL/GIE_Prog.o
- .text          0x00000000        0x0 MCAL/Timer.o
- .data          0x00000000        0x0 MCAL/Timer.o
- .bss           0x00000000        0x0 MCAL/Timer.o
- .text.Timer0_Init
-                0x00000000       0x4a MCAL/Timer.o
- .text.Timer0_OC0Mode
-                0x00000000       0x36 MCAL/Timer.o
- .text.Timer0_OVF_InterruptEnable
-                0x00000000        0x8 MCAL/Timer.o
- .text.Timer0_OVF_InterruptDisable
-                0x00000000        0x8 MCAL/Timer.o
- .text.Timer0_OC0_InterruptEnable
-                0x00000000        0x8 MCAL/Timer.o
- .text.Timer0_OC0_InterruptDisable
-                0x00000000        0x8 MCAL/Timer.o
- .text.TIMER0_OVF_SetCallBack
-                0x00000000        0xa MCAL/Timer.o
- .text.TIMER0_OC0_SetCallBack
-                0x00000000        0xa MCAL/Timer.o
- .text.Timer1_Init
-                0x00000000       0x78 MCAL/Timer.o
- .text.Timer1_OCRA1Mode
-                0x00000000       0x36 MCAL/Timer.o
- .text.Timer1_OCRB1Mode
-                0x00000000       0x36 MCAL/Timer.o
- .text.Timer1_InputCaptureEdge
-                0x00000000       0x16 MCAL/Timer.o
- .text.Timer1_ICU_InterruptEnable
-                0x00000000        0x8 MCAL/Timer.o
- .text.Timer1_ICU_InterruptDisable
-                0x00000000        0x8 MCAL/Timer.o
- .text.Timer1_OVF_InterruptEnable
-                0x00000000        0x8 MCAL/Timer.o
- .text.Timer1_OVF_InterruptDisable
-                0x00000000        0x8 MCAL/Timer.o
- .text.Timer1_OCA_InterruptEnable
-                0x00000000        0x8 MCAL/Timer.o
- .text.Timer1_OCA_InterruptDisable
-                0x00000000        0x8 MCAL/Timer.o
- .text.Timer1_OCB_InterruptEnable
-                0x00000000        0x8 MCAL/Timer.o
- .text.Timer1_OCB_InterruptDisable
-                0x00000000        0x8 MCAL/Timer.o
- .text.Timer1_OVF_SetCallBack
-                0x00000000        0xa MCAL/Timer.o
- .text.Timer1_OCA_SetCallBack
-                0x00000000        0xa MCAL/Timer.o
- .text.Timer1_OCB_SetCallBack
-                0x00000000        0xa MCAL/Timer.o
- .text.Timer1_ICU_SetCallBack
-                0x00000000        0xa MCAL/Timer.o
- .text.TIMER2_Init
-                0x00000000       0x40 MCAL/Timer.o
- .text.TIMER2_OC2Mode
-                0x00000000       0x36 MCAL/Timer.o
- .text.TIMER2_OV_InterruptEnable
-                0x00000000        0x8 MCAL/Timer.o
- .text.TIMER2_OV_InterruptDisable
-                0x00000000        0x8 MCAL/Timer.o
- .text.TIMER2_OC_InterruptEnable
-                0x00000000        0x8 MCAL/Timer.o
- .text.TIMER2_OC_InterruptDisable
-                0x00000000        0x8 MCAL/Timer.o
- .text.TIMER2_OVF_SetCallBack
-                0x00000000        0xa MCAL/Timer.o
- .text.TIMER2_OC2_SetCallBack
-                0x00000000        0xa MCAL/Timer.o
+ .text          0x00000000        0x0 MCAL/DIO/src/DIO_program.o
+ .data          0x00000000        0x0 MCAL/DIO/src/DIO_program.o
+ .bss           0x00000000        0x0 MCAL/DIO/src/DIO_program.o
+ .text.DIO_voidSetPinDirection
+                0x00000000       0x96 MCAL/DIO/src/DIO_program.o
+ .text.DIO_voidSetPinValue
+                0x00000000       0x88 MCAL/DIO/src/DIO_program.o
+ .text.DIO_voidGetPinValue
+                0x00000000       0x32 MCAL/DIO/src/DIO_program.o
+ .text.DIO_voidActivePinInPullUpResistance
+                0x00000000       0x60 MCAL/DIO/src/DIO_program.o
+ .text.DIO_voidSetPortDirection
+                0x00000000       0x48 MCAL/DIO/src/DIO_program.o
+ .text.DIO_voidSetPortValue
+                0x00000000       0x20 MCAL/DIO/src/DIO_program.o
+ .text.DIO_voidGetPortValue
+                0x00000000       0x28 MCAL/DIO/src/DIO_program.o
+ .text.DIO_voidTogglePortValue
+                0x00000000       0x30 MCAL/DIO/src/DIO_program.o
+ .text.DIO_voidActivePortInPullUpResistance
+                0x00000000       0x28 MCAL/DIO/src/DIO_program.o
+ .text          0x00000000        0x0 MCAL/GI/src/GI_program.o
+ .data          0x00000000        0x0 MCAL/GI/src/GI_program.o
+ .bss           0x00000000        0x0 MCAL/GI/src/GI_program.o
+ .text.GI_voidDisable
+                0x00000000        0x8 MCAL/GI/src/GI_program.o
+ .text          0x00000000        0x0 RTOS/src/RTOS_KERNEL_program.o
+ .data          0x00000000        0x0 RTOS/src/RTOS_KERNEL_program.o
+ .bss           0x00000000        0x0 RTOS/src/RTOS_KERNEL_program.o
  .text          0x00000000        0x0 RTOS/src/RTOS_Timer_program.o
  .data          0x00000000        0x0 RTOS/src/RTOS_Timer_program.o
  .bss           0x00000000        0x0 RTOS/src/RTOS_Timer_program.o
- .comment       0x00000000       0x31 RTOS/src/RTOS_Timer_program.o
+ .text.RTOS_Timer_voidStop
+                0x00000000       0x14 RTOS/src/RTOS_Timer_program.o
+ .text          0x00000000        0x0 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x00000000        0x0 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x00000000        0x0 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc   0x00000000        0x0 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
  .text          0x00000000        0x0 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  .data          0x00000000        0x0 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  .bss           0x00000000        0x0 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
@@ -144,22 +78,6 @@ Discarded input sections
                 0x00000000        0x0 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.fixed
                 0x00000000        0x0 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
- .text          0x00000000        0x0 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
- .data          0x00000000        0x0 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
- .bss           0x00000000        0x0 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
- .text.libgcc.mul
-                0x00000000        0x0 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
- .text.libgcc.div
-                0x00000000        0x0 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
- .text.libgcc   0x00000000        0x0 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
- .text.libgcc.prologue
-                0x00000000        0x0 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
- .text.libgcc.builtins
-                0x00000000        0x0 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
- .text.libgcc.fmul
-                0x00000000        0x0 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
- .text.libgcc.fixed
-                0x00000000        0x0 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
  .text          0x00000000        0x0 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
  .data          0x00000000        0x0 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
  .bss           0x00000000        0x0 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
@@ -193,11 +111,9 @@ Linker script and memory map
 
 LOAD D:/programm/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
 LOAD main.o
-LOAD MCAL/DIO.o
-LOAD MCAL/DIO_CFG.o
-LOAD MCAL/EX_Interrupt.o
-LOAD MCAL/GIE_Prog.o
-LOAD MCAL/Timer.o
+LOAD MCAL/DIO/src/DIO_program.o
+LOAD MCAL/GI/src/GI_program.o
+LOAD RTOS/src/RTOS_KERNEL_program.o
 LOAD RTOS/src/RTOS_Timer_program.o
 START GROUP
 LOAD d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a
@@ -308,7 +224,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0x41e
+.text           0x00000000      0x308
  *(.vectors)
  .vectors       0x00000000       0x54 D:/programm/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
                 0x00000000                __vector_default
@@ -349,10 +265,8 @@ END GROUP
  *(.init3)
  *(.init3)
  *(.init4)
- .init4         0x00000060       0x16 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
-                0x00000060                __do_copy_data
- .init4         0x00000076       0x10 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
-                0x00000076                __do_clear_bss
+ .init4         0x00000060       0x10 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                0x00000060                __do_clear_bss
  *(.init4)
  *(.init5)
  *(.init5)
@@ -363,63 +277,92 @@ END GROUP
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x00000086        0x8 D:/programm/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
+ .init9         0x00000070        0x8 D:/programm/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
  *(.init9)
  *(.text)
- .text          0x0000008e        0x4 D:/programm/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
-                0x0000008e                __vector_12
-                0x0000008e                __bad_interrupt
-                0x0000008e                __vector_13
-                0x0000008e                __vector_17
-                0x0000008e                __vector_19
-                0x0000008e                __vector_15
-                0x0000008e                __vector_14
-                0x0000008e                __vector_16
-                0x0000008e                __vector_18
-                0x0000008e                __vector_20
-                0x00000092                . = ALIGN (0x2)
+ .text          0x00000078        0x4 D:/programm/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
+                0x00000078                __vector_1
+                0x00000078                __vector_12
+                0x00000078                __bad_interrupt
+                0x00000078                __vector_6
+                0x00000078                __vector_3
+                0x00000078                __vector_11
+                0x00000078                __vector_13
+                0x00000078                __vector_17
+                0x00000078                __vector_19
+                0x00000078                __vector_7
+                0x00000078                __vector_5
+                0x00000078                __vector_9
+                0x00000078                __vector_2
+                0x00000078                __vector_15
+                0x00000078                __vector_8
+                0x00000078                __vector_14
+                0x00000078                __vector_10
+                0x00000078                __vector_16
+                0x00000078                __vector_18
+                0x00000078                __vector_20
+                0x0000007c                . = ALIGN (0x2)
  *(.text.*)
+ .text.rLed     0x0000007c        0x8 main.o
+                0x0000007c                rLed
+ .text.gLed     0x00000084        0xe main.o
+                0x00000084                gLed
+ .text.bLed     0x00000092        0xe main.o
+                0x00000092                bLed
+ .text.yLed     0x000000a0        0xe main.o
+                0x000000a0                yLed
  .text.startup.main
-                0x00000092        0x2 main.o
-                0x00000092                main
- .text.__vector_1
-                0x00000094       0x52 MCAL/EX_Interrupt.o
-                0x00000094                __vector_1
- .text.__vector_2
-                0x000000e6       0x52 MCAL/EX_Interrupt.o
-                0x000000e6                __vector_2
- .text.__vector_3
-                0x00000138       0x52 MCAL/EX_Interrupt.o
-                0x00000138                __vector_3
- .text.__vector_11
-                0x0000018a       0x52 MCAL/Timer.o
-                0x0000018a                __vector_11
- .text.__vector_10
-                0x000001dc       0x52 MCAL/Timer.o
-                0x000001dc                __vector_10
- .text.__vector_9
-                0x0000022e       0x52 MCAL/Timer.o
-                0x0000022e                __vector_9
- .text.__vector_7
-                0x00000280       0x52 MCAL/Timer.o
-                0x00000280                __vector_7
- .text.__vector_8
-                0x000002d2       0x52 MCAL/Timer.o
-                0x000002d2                __vector_8
- .text.__vector_6
-                0x00000324       0x52 MCAL/Timer.o
-                0x00000324                __vector_6
- .text.__vector_5
-                0x00000376       0x52 MCAL/Timer.o
-                0x00000376                __vector_5
+                0x000000ae       0x42 main.o
+                0x000000ae                main
+ .text.DIO_voidInit
+                0x000000f0       0x1c MCAL/DIO/src/DIO_program.o
+                0x000000f0                DIO_voidInit
+ .text.DIO_voidTogglePinValue
+                0x0000010c       0x60 MCAL/DIO/src/DIO_program.o
+                0x0000010c                DIO_voidTogglePinValue
+ .text.GI_voidEnable
+                0x0000016c        0x8 MCAL/GI/src/GI_program.o
+                0x0000016c                GI_voidEnable
+ .text.private_voidScheduler
+                0x00000174       0x4e RTOS/src/RTOS_KERNEL_program.o
+ .text.RTOS_KERNEL_voidStartScheduling
+                0x000001c2       0x1a RTOS/src/RTOS_KERNEL_program.o
+                0x000001c2                RTOS_KERNEL_voidStartScheduling
+ .text.RTOS_KERNEL_voidCreateTask
+                0x000001dc       0x32 RTOS/src/RTOS_KERNEL_program.o
+                0x000001dc                RTOS_KERNEL_voidCreateTask
+ .text.RTOS_KERNEL_voidDeletTask
+                0x0000020e       0x16 RTOS/src/RTOS_KERNEL_program.o
+                0x0000020e                RTOS_KERNEL_voidDeletTask
+ .text.RTOS_KERNEL_voidSuspendTask
+                0x00000224       0x16 RTOS/src/RTOS_KERNEL_program.o
+                0x00000224                RTOS_KERNEL_voidSuspendTask
+ .text.RTOS_KERNEL_voidResumeTask
+                0x0000023a       0x16 RTOS/src/RTOS_KERNEL_program.o
+                0x0000023a                RTOS_KERNEL_voidResumeTask
+ .text.RTOS_Timer_voidInit
+                0x00000250       0x14 RTOS/src/RTOS_Timer_program.o
+                0x00000250                RTOS_Timer_voidInit
+ .text.RTOS_Timer_voidStart
+                0x00000264       0x14 RTOS/src/RTOS_Timer_program.o
+                0x00000264                RTOS_Timer_voidStart
+ .text.RTOS_Timer_voidSetCompareMatchValue
+                0x00000278        0x4 RTOS/src/RTOS_Timer_program.o
+                0x00000278                RTOS_Timer_voidSetCompareMatchValue
+ .text.RTOS_Timer_voidSetCallBackCTC
+                0x0000027c        0xe RTOS/src/RTOS_Timer_program.o
+                0x0000027c                RTOS_Timer_voidSetCallBackCTC
  .text.__vector_4
-                0x000003c8       0x52 MCAL/Timer.o
-                0x000003c8                __vector_4
-                0x0000041a                . = ALIGN (0x2)
+                0x0000028a       0x52 RTOS/src/RTOS_Timer_program.o
+                0x0000028a                __vector_4
+ .text.libgcc.div
+                0x000002dc       0x28 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+                0x000002dc                __udivmodhi4
+                0x00000304                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x0000041a        0x0 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x0000041a                _exit
-                0x0000041a                exit
+ .fini9         0x00000304        0x0 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x00000304                _exit
+                0x00000304                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -438,12 +381,12 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x0000041a        0x4 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x00000304        0x4 d:/programm/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x0000041e                _etext = .
+                0x00000308                _etext = .
 
-.data           0x00800060        0x0 load address 0x0000041e
-                0x00800060                PROVIDE (__data_start, .)
+.data           0x00800060        0x0 load address 0x00000308
+                [!provide]                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
  *(.gnu.linkonce.d*)
@@ -452,44 +395,28 @@ END GROUP
  *(.gnu.linkonce.r*)
                 0x00800060                . = ALIGN (0x2)
                 0x00800060                _edata = .
-                0x00800060                PROVIDE (__data_end, .)
+                [!provide]                PROVIDE (__data_end, .)
 
-.bss            0x00800060       0x16
+.bss            0x00800060       0x1d
                 0x00800060                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
- .bss.INT2_Fptr
-                0x00800060        0x2 MCAL/EX_Interrupt.o
- .bss.INT1_Fptr
-                0x00800062        0x2 MCAL/EX_Interrupt.o
- .bss.INT0_Fptr
-                0x00800064        0x2 MCAL/EX_Interrupt.o
- .bss.Timer2_OC2_Fptr
-                0x00800066        0x2 MCAL/Timer.o
- .bss.Timer2_OVF_Fptr
-                0x00800068        0x2 MCAL/Timer.o
- .bss.Timer1_ICU_Fptr
-                0x0080006a        0x2 MCAL/Timer.o
- .bss.Timer1_OCB_Fptr
-                0x0080006c        0x2 MCAL/Timer.o
- .bss.Timer1_OCA_Fptr
-                0x0080006e        0x2 MCAL/Timer.o
- .bss.Timer1_OVF_Fptr
-                0x00800070        0x2 MCAL/Timer.o
- .bss.Timer0_OC0_Fptr
-                0x00800072        0x2 MCAL/Timer.o
- .bss.Timer0_OVF_Fptr
-                0x00800074        0x2 MCAL/Timer.o
+ .bss.Local_u16TickCount.1628
+                0x00800060        0x2 RTOS/src/RTOS_KERNEL_program.o
+ .bss.private_arrOfTasks
+                0x00800062       0x19 RTOS/src/RTOS_KERNEL_program.o
+ .bss.prvivate_pCallBackCTC
+                0x0080007b        0x2 RTOS/src/RTOS_Timer_program.o
  *(COMMON)
-                0x00800076                PROVIDE (__bss_end, .)
-                0x0000041e                __data_load_start = LOADADDR (.data)
-                0x0000041e                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0080007d                PROVIDE (__bss_end, .)
+                0x00000308                __data_load_start = LOADADDR (.data)
+                0x00000308                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800076        0x0
+.noinit         0x0080007d        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x00800076                _end = .
+                0x0080007d                _end = .
                 [!provide]                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
@@ -533,8 +460,10 @@ END GROUP
  *(.comment)
  .comment       0x00000000       0x30 main.o
                                  0x31 (size before relaxing)
- .comment       0x00000030       0x31 MCAL/EX_Interrupt.o
- .comment       0x00000030       0x31 MCAL/Timer.o
+ .comment       0x00000030       0x31 MCAL/DIO/src/DIO_program.o
+ .comment       0x00000030       0x31 MCAL/GI/src/GI_program.o
+ .comment       0x00000030       0x31 RTOS/src/RTOS_KERNEL_program.o
+ .comment       0x00000030       0x31 RTOS/src/RTOS_Timer_program.o
 
 .note.gnu.avr.deviceinfo
                 0x00000000       0x3c
